@@ -1,0 +1,315 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #FC4A1F;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+.large-container {
+  min-height: 90vh; 
+}
+
+.navbar-color {
+  color: white;
+  background-image: linear-gradient(to bottom right, #FC4A1F, #AC0D57);
+}
+
+.footer-design {
+  padding-top:10vh;
+}
+
+.footer-color {
+  background-color: #FC4A1F;
+  color: white;
+}
+
+.button {
+  background-image: linear-gradient(to right, #FC4A1F, #AC0D57);
+  transition-duration: 0.4s;
+  color: white;
+  border:none;
+}
+
+.button:hover {
+  background-image: linear-gradient(to right, #e42e00, #86003f) !important;
+  color: white !important;
+}
+
+.button:active {
+  background-image: linear-gradient(to right, #FC4A1F, #AC0D57);
+  color: #ffffff;
+  border:none;
+}
+
+.button:focus {
+  background-image: linear-gradient(to right, #FC4A1F, #AC0D57);
+  color: #ffffff;
+  border:none;
+}
+
+.navbar-button {
+  background-image: linear-gradient(to right, #ec9233, #fd3030);
+  transition-duration: 0.4s;
+  color: white;
+  border:none;
+}
+
+.navbar-button:hover {
+  background-image: linear-gradient(to right, #e65d07, #9c0505) !important;
+  color: white !important;
+}
+
+.navbar-button:active {
+  background-image: linear-gradient(to right, #ecc433, #fd3030);
+  color: #ffffff;
+  border:none;
+}
+
+.navbar-button:focus {
+  background-image: linear-gradient(to right, #ecc433, #fd3030);
+  color: #ffffff;
+  border:none;
+}
+
+.flexible-card {
+  width: 7.5vh;
+  margin: 10px;
+}
+
+.card-header {
+  background-color: #FC4A1F;
+  border-color: #a6a6a6;
+  font-size: 30px;
+  color: #FFFFFF;
+}
+
+.card {
+  background-color: white;
+  border-color: #a6a6a6;
+  border-radius: 0.5em;
+  color: black;
+}
+
+.card-body {
+  border-color: white;
+  font-size: 20px;
+}
+
+.modal-header {
+  background-color: #FC4A1F;
+  color: white;
+}
+
+.modal {
+  border-color: grey;
+  border-radius: 0.5em;
+  color: white;
+}
+
+.modal-content {
+  background-color: #EFEFEF;
+  border-color: grey;
+  border-radius: 0.5em;
+  color: black;
+}
+
+.modal-body {
+  border-color: grey;
+  background-color: #EFEFEF;
+}
+
+.modal-footer {
+  background-color: #EFEFEF;
+}
+
+.list-group-item-card {
+  background-color: #2D2926FF !important;
+  border-color: #525252;
+  color: white;
+}
+
+.list-group-item {
+  background-color: #313131;
+  border-color: #525252;
+  color: white;
+}
+
+.pagination > li > a,
+.pagination > li > span {
+  background-color: #2D2926FF;
+  border-color: grey;
+  color: white;
+}
+
+.pagination > .active > a,
+.pagination > .active > a:focus,
+.pagination > .active > a:hover,
+.pagination > .active > span,
+.pagination > .active > span:focus,
+.pagination > .active > span:hover {
+  background-color: #FC4A1F;
+  border-color: grey;
+}
+
+.pagination > .disabled > a,
+.pagination > .disabled > a:focus,
+.pagination > .disabled > a:hover,
+.pagination > .disabled > span,
+.pagination > .disabled > span:focus,
+.pagination > .disabled > span:hover {
+  background-color: #2D2926FF;
+  border-color: grey;
+  color: grey;
+}
+
+.pagination a:hover:not(.active) {
+  border-color: grey;
+  background-color: #606e66;
+  color: white;
+}
+
+.tag-color {
+  background-color: #FC4A1F !important;
+  color: white !important;
+  border-radius: 0.2rem;
+}
+
+.header1-design {
+  color: #FC4A1F !important;
+  font-size: 60px;
+}
+
+.header-design-navbar {
+  color: white !important;
+  font-size: 60px;
+}
+
+.header3-design {
+  color: #FC4A1F !important;
+  padding-top: 20px;
+  font-size: 45px;
+}
+
+.header5-design {
+  color: #FC4A1F !important;
+  font-size: 30px;
+}
+
+.card-genre-design {
+  background-color: #2D2926FF !important;
+}
+
+.table-design {
+  background-color: #2D2926FF !important;
+  border-color: #525252 !important;
+  color: white;
+  border-radius: 0.5em;
+  text-align: center;
+  table-layout: fixed;
+  width: "100%" !important;
+  margin: auto;
+}
+
+.dropdown {
+  color: white;
+}
+.dropdown-toggle {
+  background-color: #FC4A1F !important;
+  font-weight: bold;
+  border-color: #525252 !important;
+  color: white;
+}
+.dropdown-menu {
+  background-color: #2D2926FF !important;
+  border-color: #525252 !important;
+  color: white;
+}
+.dropdown-item:active {
+  background-color: #FC4A1F !important;
+  border-color: #525252 !important;
+  color: white;
+}
+
+.dropdown-item::selection {
+  background-color: #FC4A1F !important;
+  border-color: #525252 !important;
+  color: white;
+}
+
+.text-center {
+  text-align:center;
+}
+
+.badge-design-main {
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.text-navbar {
+  color: #FFFFFF !important;
+  font-size: 20px;
+}
+
+.text-navbar-title {
+  color: #FFFFFF !important;
+  font-size: 40px;
+}
+
+.text-title-color {
+  color: #FC4A1F !important;
+}
+
+.tooltip-inner {
+  background-color: #FC4A1F !important;
+  border-color: #525252 !important;
+  color: white;
+  opacity: 1;
+  font-size: 16px;
+}
+.tooltip-arrow {
+  border-color: #FC4A1F !important;
+}
+
+.tooltip-arrow::before {
+  border-color: #FC4A1F transparent !important;
+}

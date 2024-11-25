@@ -1,3 +1,7 @@
+# Custom (config files)
+/package-lock.json
+/keys.json
+
 # Logs
 logs
 *.log
