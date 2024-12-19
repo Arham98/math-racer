@@ -4,11 +4,8 @@ import GameBoard from './GameBoard';
 
 export default function HomePage() {
   return (
-        <GameBoard />
+    <Container fluid>
+      <GameBoard />
+    </Container>
   );
 }
-    // <Container className="center-container">
-    //   <h3 className="text-title-color">Home</h3>
-    //   <pre>
-    //   </pre>
-    // </Container>
