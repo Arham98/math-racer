@@ -1,6 +1,6 @@
 # Custom (config files)
 /package-lock.json
-/keys.json
+/src/keys.json
 
 # Logs
 logs

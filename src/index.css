@@ -351,14 +351,7 @@
 .lane {
   flex: 1;
   position: relative;
-  /* border-left: 6px dashed white;
-  overflow: hidden;
-  animation: road-divs 2s linear infinite; */
 }
-
-/* .lane:first-child {
-  border-left: none;
-} */
 
 .lane:not(:first-child)::before {
   content: "";
@@ -367,15 +360,14 @@
   top: -20px;
   left: 0;
   width: 10px;
-  height: 200%; /* Extends beyond the container height */
+  height: 200%;
   background: repeating-linear-gradient(
     white 0,
     white 40px, /* Dash size */
     transparent 40px,
     transparent 80px /* Dash + gap size */
   );
-  /* border-left: 10px dashed white; */
-  animation: move-dashes 1s linear infinite; /* Animate dashes */
+  animation: move-dashes 1s linear infinite;
 }
 
 @keyframes move-dashes {
@@ -383,6 +375,6 @@
     transform: translateY(0);
   }
   to {
-    transform: translateY(80px); /* Matches the size of one dash + gap */
+    transform: translateY(80px);
   }
 }

@@ -16,7 +16,6 @@ export default function App() {
   return (
     <>
       <NavBar />
-      {/* <Container fluid="" style={{background: '#EFEFEF', paddingTop: '5vh'}}> */}
       <div className="d-flex  flex-column" style={{ display: 'flex', minHeight: '85vh', minWidth: '100%', background: '#EFEFEF', paddingTop: '1vh'}}>
         <BrowserRouter>
           <Routes>
@@ -26,7 +25,6 @@ export default function App() {
           </Routes>
         </BrowserRouter>
       </div>
-      {/* <Footer url={'saeedarham100@gmail.com'} /> */}
     </>
   );
 }
