@@ -8,10 +8,9 @@ import {
   Navigate,
 } from 'react-router-dom';
 import NavBar from './components/utils/NavBar';
-import HomePage from './components/HomePage';
 import PageNotFoundError from './components/error_pages/PageNotFoundError';
+import HomePage from './components/HomePage';
 
-{/* <div className="d-flex flex-column" style={{ minHeight: '90vh', background: '#EFEFEF' }}> */}
 export default function App() {
   return (
     <>
