@@ -7,6 +7,9 @@ import Modal from 'react-bootstrap/Modal';
 import "../index.css";
 
 export default function GameBoard() {
+  // Race distance
+  const totalGameDistance = 500;
+
   // Declare state variables for positions of the players' cars
   const [player1Position, setPlayer1Position] = useState(2); // Positions: 1-3 reserved for Player 1
   const [player2Position, setPlayer2Position] = useState(5); // Positions: 4-6 reserved for Player 2/AI
@@ -95,13 +98,11 @@ export default function GameBoard() {
     else if (sym === '/')
       mathRes = val1 / val2;
     let res = {expression: `${val1} ${sym} ${val2}`, value: mathRes};
-    res = {expression: `-100`, value: -100};
     return res;
   }
 
   // Simulate distance covered
   useEffect(() => {
-    const totalGameDistance = 50;
     if (player1Distance >= totalGameDistance) {
       if (player1Distance === player2Distance)
         winnerFunc('0');
@@ -157,7 +158,8 @@ export default function GameBoard() {
     window.addEventListener("keydown", handleKeyPress);
     return () => window.removeEventListener("keydown", handleKeyPress);
   }, []);
-
+  
+  console.log(modifiers);
   return (
     <Container fluid style={{maxWidth: '100%'}}>
       <Row>
@@ -184,6 +186,7 @@ export default function GameBoard() {
                         left: `25%`,
                     }}
                   >
+                    {/* <Button disabled variant="light">{modifiers[lane-1].expression}</Button> */}
                     <Button disabled variant="light">{modifiers[lane-1].expression}</Button>
                   </div>}
                 </div>
@@ -205,7 +208,7 @@ export default function GameBoard() {
         <Modal.Header closeButton>
           <Modal.Title>Game Over</Modal.Title>
         </Modal.Header>
-        {!gameTied && <Modal.Body style={{color: 'black'}}>{winner} won the 1000 km race!</Modal.Body>}
+        {!gameTied && <Modal.Body style={{color: 'black'}}>{winner} won the {totalGameDistance} km race!</Modal.Body>}
         {gameTied && <Modal.Body style={{color: 'black'}}>Game tied!</Modal.Body>}
         <Modal.Footer>
           <Button variant="primary" onClick={handleClose}>

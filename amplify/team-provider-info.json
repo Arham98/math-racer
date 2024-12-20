@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-mathracer-dev-33141-authRole",
+      "UnauthRoleArn": "arn:aws:iam::649000303257:role/amplify-mathracer-dev-33141-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::649000303257:role/amplify-mathracer-dev-33141-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-mathracer-dev-33141-deployment",
+      "UnauthRoleName": "amplify-mathracer-dev-33141-unauthRole",
+      "StackName": "amplify-mathracer-dev-33141",
+      "StackId": "arn:aws:cloudformation:us-east-1:649000303257:stack/amplify-mathracer-dev-33141/413da220-be64-11ef-84bb-0e3cbd1680b7",
+      "AmplifyAppId": "d1x1cignpv4snq"
+    },
+    "categories": {
+      "hosting": {
+        "S3AndCloudFront": {}
+      }
+    }
+  }
+}

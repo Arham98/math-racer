@@ -2,7 +2,6 @@ import React from 'react';
 import Container from 'react-bootstrap/Container';
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
-import logo from '../../assets/Logo.png';
 
 export default function NavBar() {
   return (
@@ -12,8 +11,6 @@ export default function NavBar() {
           <Nav.Link className="text-navbar" href="/menu">
             <h1 className="header-design-navbar">
               <b>
-                <img alt="" src={logo} height="3vh" />
-                {' '}
                 Math Racer
               </b>
             </h1>
